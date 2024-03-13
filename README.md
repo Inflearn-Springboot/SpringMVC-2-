@@ -36,10 +36,9 @@ JSP를 포함한 다른 뷰 템플릿들은 해당 파일을 열면, 예를 들�
 : 타임리프는 스프링과 자연스럽게 통합되고, 스프링의 다양한 기능을 편리하게 사용할 수 있게 지원한다.
 
 - 자바 8 날짜
-    - <li>yyyy-MM-dd HH:mm:ss = <span th:text="${#temporals.format(localDateTime,
-    'yyyy-MM-dd HH:mm:ss')}"></span></li>
+    - `<li>yyyy-MM-dd HH:mm:ss = <span th:text="${#temporals.format(localDateTime,'yyyy-MM-dd HH:mm:ss')}"></span></li>`
 - URL 링크 : 타임리프에서 URL을 생성할 때는 @{...} 문법을 사용하면 된다.
-    - <li><a th:href="@{/hello}">basic url</a></li>
+    - `<li><a th:href="@{/hello}">basic url</a></li>`
 
 쿼리 파라미터
 - @{/hello(param1=${param1}, param2=${param2})}
@@ -58,8 +57,7 @@ JSP를 포함한 다른 뷰 템플릿들은 해당 파일을 열면, 예를 들�
     
 
 리터럴 대체(Literal substitutions)
-- 리터럴(공백) 오류!
-<span th:text="hello world!"></span> → <span th:text="|hello ${data}|">
+- 리터럴(공백) 오류! `<span th:text="hello world!"></span> → <span th:text="|hello ${data}|">`
 
 ---------------
 #### 타임리프 - 스프링 통합과 폼
