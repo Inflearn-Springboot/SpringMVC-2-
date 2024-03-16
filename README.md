@@ -67,6 +67,10 @@ th:object : 커맨드 객체를 지정한다.
 th:field
 HTML 태그의 id , name , value 속성을 자동으로 처리해준다.
 
+- th:object="${item}" : <form> 에서 사용할 객체를 지정한다. 선택 변수 식( *{...} )을 적용할 수 있다.*
+- *th:field="*{itemName}"
+    - *{itemName} 는 선택 변수 식을 사용했는데, ${item.itemName} 과 같다. 앞서 th:object 로 item 을 선택했기 때문에 선택 변수 식을 적용할 수 있다.
+    - th:field 는 id , name , value 속성을 모두 자동으로 만들어준다.
 ---------------
 #### 메시지, 국제화
 ---------------
