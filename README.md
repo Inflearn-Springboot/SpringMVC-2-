@@ -117,6 +117,7 @@ button.cancel=Cancel
 #### 검증1 - Validation
 
 //검증 오류 결과를 보관
+
  Map<String, String> errors = new HashMap<>();
  //검증 로직
  if (!StringUtils.hasText(item.getItemName())) { errors.put("itemName", "상품 이름은 필수입니다.");
