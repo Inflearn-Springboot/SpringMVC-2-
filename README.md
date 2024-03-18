@@ -75,6 +75,8 @@ HTML 태그의 id , name , value 속성을 자동으로 처리해준다.
 #### 메시지, 국제화
 -메시지 적용
 
+messages.properties
+
 label.item=상품
 label.item.id=상품 ID
 label.item.itemName=상품명
@@ -86,7 +88,7 @@ page.addItem=상품 등록
 page.updateItem=상품 수정
 button.save=저장
 button.cancel=취소
-- messages.properties
+
 
 - 타임리프 메시지 적용
 타임리프의 메시지 표현식 #{...} 를 사용하면 스프링의 메시지를 편리하게 조회할 수 있다.
@@ -95,6 +97,8 @@ button.cancel=취소
 - 렌더링 후 <div>상품</h2>
 
 -국제화 적용
+
+messages_en.properties
 
 label.item=Item
 label.item.id=Item ID
@@ -107,7 +111,7 @@ page.addItem=Item Add
 page.updateItem=Item Update
 button.save=Save
 button.cancel=Cancel
-- messages_en.properties
+
 
 ---------------
 #### 검증1 - Validation
