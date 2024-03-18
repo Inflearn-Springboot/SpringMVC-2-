@@ -73,6 +73,42 @@ HTML 태그의 id , name , value 속성을 자동으로 처리해준다.
     - th:field 는 id , name , value 속성을 모두 자동으로 만들어준다.
 ---------------
 #### 메시지, 국제화
+-메시지 적용
+
+label.item=상품
+label.item.id=상품 ID
+label.item.itemName=상품명
+label.item.price=가격
+label.item.quantity=수량
+page.items=상품 목록
+page.item=상품 상세
+page.addItem=상품 등록
+page.updateItem=상품 수정
+button.save=저장
+button.cancel=취소
+- messages.properties
+
+- 타임리프 메시지 적용
+타임리프의 메시지 표현식 #{...} 를 사용하면 스프링의 메시지를 편리하게 조회할 수 있다.
+예를 들어서 방금 등록한 상품이라는 이름을 조회하려면 #{label.item} 이라고 하면 된다.
+- 렌더링 전 <div th:text="#{label.item}"></h2>
+- 렌더링 후 <div>상품</h2>
+
+-국제화 적용
+
+label.item=Item
+label.item.id=Item ID
+label.item.itemName=Item Name
+label.item.price=price
+label.item.quantity=quantity
+page.items=Item List
+page.item=Item Detail
+page.addItem=Item Add
+page.updateItem=Item Update
+button.save=Save
+button.cancel=Cancel
+- messages_en.properties
+
 ---------------
 #### 검증1 - Validation
 ---------------
