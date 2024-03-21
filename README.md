@@ -17,9 +17,9 @@ https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2#
 
 궁금했던 점 :
 JWT 동작 원리
-(1) 클라이언트에서 서버로 ID/PW로 로그인을 요청한다.
-(2) 서버에서 검증 과정을 거쳐 해당 유저가 존재하면, Access Token + Refresh Token 을 발급한다.
-(3) 클라이언트는 요청 헤더에 2번에서 발급받은 Access Token 을 포함하여 API를 요청한다.
+1. 클라이언트에서 서버로 ID/PW로 로그인을 요청한다.
+2. 서버에서 검증 과정을 거쳐 해당 유저가 존재하면, Access Token + Refresh Token 을 발급한다.
+3. 클라이언트는 요청 헤더에 2번에서 발급받은 Access Token 을 포함하여 API를 요청한다.
 
 ---------------
 #### 타임리프 - 기본 기능
